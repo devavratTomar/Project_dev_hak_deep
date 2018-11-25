@@ -13,13 +13,13 @@ The social goodness will be to help food-allergic people find their health and e
 
 Food Allergy:
 
-1. Food products with no labels about allergies,
-2. Food allergy impacts of quality of life,
-3. Having a happy life together with food allergy,    
-4. Recommending food items with enough nutrients and without allergens through clustering allergic food,
-4. Accumulating enough nutrients together with food allergy,  
-5. Avoiding allergens requires careful reading of labels and stringent cleaning procedures,
-7. Food allergy prevention. 
+
+1. Grouping ingredients together under the same context using Word2Vec, for e.g. `milk` and `milk solid` should come under `same ingredient context`.
+2. Predicting allergens for a food item based on ingredients and additives (optional).
+3. Recommending food items based on additives' risk on health.
+4. Recommending food items with enough nutrients and without allergens through clustering allergic food.
+5. Doing a thorough analysis on allergens/additives present in various food brands/ manufacturing country.
+
 
 
 # Dataset
@@ -34,7 +34,10 @@ Open food facts ( https://www.kaggle.com/openfoodfacts/world-food-facts/home) is
 # Script for milestone 2
 1. Explanation why we gave up from Carbon Footprint idea,
 2. Feature exploration of nutrients of the products,
-3. Transformation of "ingredients_text" and "allergens"  text features into common language.(TBA)
+3. Transformation of "ingredients_text" and "allergens"  text features into common language.
+More about to this:
+After doing text transformation of 'ingredients_text' feature, we will need to group the ingredients together under the same umbrella. For this, we are going to go through each of the unique ingredients datasets and get only nouns out from them, and then use word2vec and nltk libraries to group similar ingredients under the higher level ingredient.
+We haven't pursued this task since for this we would need to train a model on all ingredients and this comes under feature engineering and modelling aspect which we will pursue for Milestone 3.
 
 
 
