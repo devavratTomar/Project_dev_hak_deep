@@ -2,3 +2,5 @@
 .ipynb_checkpoints/
 en.o*
 Nutri*
+data/*
+*.txt
