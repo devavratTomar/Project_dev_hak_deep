@@ -40,7 +40,7 @@ More about to this:
 
 After doing text transformation of 'ingredients_text' feature, we will need to group the ingredients together under the same umbrella. For this, we are going to go through each of the unique ingredients datasets and get only nouns out from them, and then use word2vec and nltk libraries to group similar ingredients under the higher level ingredient.
 We haven't pursued this task since for this we would need to train a model on all ingredients and this comes under feature engineering and modelling aspect which we will pursue for Milestone 3.
-
+Google translate was used to translate the text feature files, hence the translations are not accurate since they contained several languages, which makes the automatic translation task be difficult.
 
 
 # The list of internal milestones up until project milestone 3 Dec. 16, 2018
