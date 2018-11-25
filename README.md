@@ -13,13 +13,11 @@ The social goodness will be to help food allergic people find their healthy and 
 
 Food Allergy:
 
-1. Food products with no labels about allergies,
-2. Food allergy impacts of quality of life,
-3. Having happy life together with food allergy,    
-4. Recommending food items with enough nutrients and without allergens through clustering allergic food,
-4. Accumulating enough nutrients together with food allergy,  
-5. Avoiding allergens requires careful reading of labels and stringent cleaning procedures,
-7. Food allergy prevention. 
+1. Grouping ingredients together under the same context using Word2Vec, for e.g. `milk` and `milk solid` should come under `same ingredient context`.
+2. Predicting allergens for a food item based on ingredients and additives (optional).
+3. Recommending food items based on additives' risk on health.
+4. Recommending food items with enough nutrients and without allergens through clustering allergic food.
+5. Doing a thorough analysis on allergens/additives present in various food brands/ manufacturing country.
 
 
 
