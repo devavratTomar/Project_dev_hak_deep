@@ -35,7 +35,9 @@ Open food facts ( https://www.kaggle.com/openfoodfacts/world-food-facts/home) is
 1. Explanation why we gave up from Carbon Footprint idea,
 2. Feature exploration of nutrients of the products,
 3. Transformation of "ingredients_text" and "allergens"  text features into common language.
+
 More about to this:
+
 After doing text transformation of 'ingredients_text' feature, we will need to group the ingredients together under the same umbrella. For this, we are going to go through each of the unique ingredients datasets and get only nouns out from them, and then use word2vec and nltk libraries to group similar ingredients under the higher level ingredient.
 We haven't pursued this task since for this we would need to train a model on all ingredients and this comes under feature engineering and modelling aspect which we will pursue for Milestone 3.
 
@@ -43,6 +45,6 @@ We haven't pursued this task since for this we would need to train a model on al
 
 # The list of internal milestones up until project milestone 3 Dec. 16, 2018
 Our planned schedule of work till the milestone 3:
-1. Week 1:  Finalize the dataset with structured and well-defined features, build a classification model on the data to classify the possible allergic effect of new food from testing dataset. Measure the accuracy of the model. 
-2. Week 2:  Build an optimal system of querying to return the best food with a specific amount of nutrition and allergy limitations.
-3. Week 3:  Prepare the report on how our model can identify the allergic effect of the food and what recommendations do we have for people with food allergies.
+Week 1:  Finalize the dataset with structured and well-defined features, build a classification model on the data to classify the possible allergic effect of new food from testing dataset. Measure the accuracy of the model. 
+Week 2:  Build an optimal system of querying to return the best food with a specific amount of nutrition and allergy limitations.
+Week 3:  Prepare the report on how our model can identify the allergic effect of the food and what recommendations do we have for people with food allergies.
