@@ -1,2 +1,4 @@
 .gitattributes
 .ipynb_checkpoints/
+en.o*
+Nutri*
