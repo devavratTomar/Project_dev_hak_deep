@@ -45,6 +45,6 @@ Google translate was used to translate the text feature files, hence the transla
 
 # The list of internal milestones up until project milestone 3 Dec. 16, 2018
 Our planned schedule of work till the milestone 3:
-Week 1:  Finalize the dataset with structured and well-defined features, build a classification model on the data to classify the possible allergic effect of new food from testing dataset. Measure the accuracy of the model. 
-Week 2:  Build an optimal system of querying to return the best food with a specific amount of nutrition and allergy limitations.
-Week 3:  Prepare the report on how our model can identify the allergic effect of the food and what recommendations do we have for people with food allergies.
+- Week 1:  Finalize the dataset with structured and well-defined features, build a classification model on the data to classify the possible allergic effect of new food from testing dataset. Measure the accuracy of the model. 
+- Week 2:  Build an optimal system of querying to return the best food with a specific amount of nutrition and allergy limitations.
+- Week 3:  Prepare the report on how our model can identify the allergic effect of the food and what recommendations do we have for people with food allergies.
