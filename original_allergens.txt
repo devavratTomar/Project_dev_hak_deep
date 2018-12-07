@@ -500,6 +500,7 @@ milchprotein
 austernextrakt
 hartweiengrie
 weizenpoppies
+wheyprotein
 wheyproteinkonzentrat
 frlachs
 eigelb
@@ -1184,7 +1185,7 @@ sulfureux
 frlait de chèvre
 acoupa aiguille
 dioxyde de soufre
-sulphur dioxide and sulphites
+ensulphurdioxideandsulphites
 coques
 huile darachide
 farine d'épeautre
@@ -1345,6 +1346,7 @@ glace à la vanille en garniture 35
 graines de sesame
 œufs d'esturgeon
 crème caillée
+cornish clotted cream
 çrème
 levain du blé
 lait entier crème
@@ -1365,6 +1367,7 @@ sardines fraîches
 saint jacques
 lait entier en poudre
 fromage de vache
+fromage cheddar
 huîtres
 semine de susan
 frlait traces éventuelles de  gluten

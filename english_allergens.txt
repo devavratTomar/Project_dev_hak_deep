@@ -44,7 +44,7 @@ whey protein
 spelled wholemeal flour
 walnut kernels
 goberge
-Huevo
+eggs
 Oyster
 protein vegetal your soya
 dried egg
@@ -97,7 +97,7 @@ wheat gluten
 egg whites
 salt
 lactic acid bacteria
-Roquefort
+Roquefort cheese
 nutmeg
 shellfish
 mint
@@ -138,7 +138,7 @@ seaweed
 ferments
 pout
 amazonia nuts
-metabisulfit of sodiu
+metabisulfite of sodiu
 corn
 locust bean gum
 wheat malt
@@ -151,7 +151,7 @@ corn
 lactate
 cod eggs
 egg whites
-natrium metabisulfit
+natrium metabisulfite
 corn
 peanut
 corn
@@ -192,7 +192,7 @@ oatmeal
 haddock
 cheddar cheese
 sour Cream
-yogourt
+yogurt
 haddock
 protein
 anhydride
@@ -273,7 +273,7 @@ buttermilk powder
 herring fillets
 roggenvolkornmehl
 rye wholemeal flour
-beaf
+beef
 full cream
 rye
 rye malt flour
@@ -322,7 +322,7 @@ chesse
 rye flour
 wheat
 oat
-Mullus barbatus
+Mullus barbatus fish
 milk acid
 oat
 white cheese
@@ -500,7 +500,8 @@ milk protein
 oyster extract
 wheat semolina
 wheat poppies
-whey protein 
+whey protein
+whey protein
 salmon
 egg yolk
 wheat shotgun
@@ -1345,6 +1346,7 @@ vanilla ice cream in garnish 35
 Sesame seeds
 sturgeon eggs
 curd cream
+cornish clotted cream
 cream
 wheat leaven
 whole cream milk
@@ -1365,6 +1367,7 @@ fresh sardines
 Saint Jacques
 powdered whole milk
 cow cheese
+fromage cheddar
 Oysters
 susan sow
 milk possible traces of gluten
@@ -2461,7 +2464,7 @@ selleri
 kruterbutter
 eggs
 emmental cheese
-sulpur
+sulphur
 barley
 trout fillet
 pecan seeds
@@ -2763,9 +2766,9 @@ fraucun
 mornay sauce
 egg powder
 pectin
-sodium disulphite
+sodium disulfite
 sulfite
-disulphite
+disulfite
 oat flour
 sodium meta bisulfite
 biscuit sodium
@@ -2995,7 +2998,7 @@ almonds
 grain extract
 oatmeal flakes
 milk fat powder
-speltino
+spelt wheat
 celery extract
 cod fish
 herring fish
@@ -3006,7 +3009,7 @@ orange
 barley malt extract
 cream
 granish
-speltkli
+spelt wheat
 lactose
 almond
 yeast extract
@@ -3159,7 +3162,7 @@ sardine fillets
 bié
 barley malt gluten
 whey powder
-sulpur dioxide
+sulphur dioxide
 milk
 marlin fish
 fish
