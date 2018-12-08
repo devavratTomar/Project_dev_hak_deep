@@ -75,7 +75,7 @@ class VectorQuantizationBST:
         """
         logging.info("Cleaning and Normalising the data set")
         
-        self.data.drop('energy_100g', axis=1, inplace=True)
+        # self.data.drop('energy_100g', axis=1, inplace=True)
         
         #Remove data samples that have all columns 0.
         self.data = self.data[self.data.sum(axis=1) != 0]
@@ -140,6 +140,11 @@ class VectorQuantizationBST:
                 current_node.items = None
         
         return is_saturated    
+    
+    def run_all(self):
+        while(True):
+            if self.run_next():
+                break
     
     def get_similar_food(self, nutrition_feature_100g):
         """
