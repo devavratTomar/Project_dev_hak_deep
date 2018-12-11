@@ -14,8 +14,8 @@ The social goodness will be to help food-allergic people find their health and e
 Food Allergy:
 
 
-1. Grouping ingredients together under the same context using Word2Vec, for e.g. `milk` and `milk solid` should come under `same ingredient context`.
-2. Predicting allergens for a food item based on ingredients and additives (optional).
+1. Grouping allergens together under the same context using Word2Vec, for e.g. `milk` and `milk solid` should come under `same ingredient context`.
+2. Predicting allergens for a food item based on categories and ingredients.
 3. Recommending food items based on additives' risk on health.
 4. Recommending food items with enough nutrients and without allergens through clustering allergic food.
 5. Doing a thorough analysis on allergens/additives present in various food brands/ manufacturing country.
