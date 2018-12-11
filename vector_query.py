@@ -79,12 +79,13 @@ class VectorQuantizationBST:
         
         #Remove data samples that have all columns 0.
         self.data = self.data[self.data.sum(axis=1) != 0]
-        self.data_orig_mean = self.data.mean()
+        self.data_orig_mean = self.data.replace(0, np.NaN).mean()
         
         self.data = self.data/self.data_orig_mean
         
         # It may happen that a particular column has all zeros (while testing for 1000 items.)
         self.data.fillna(0., inplace=True)
+        self.data = self.data + 1e-8*np.random.rand(self.data.shape[0], self.data.shape[1])
         
         # normalize the vectors to have unit norm as we are computing cosine distance
         self.data = self.data.divide(np.sqrt(np.square(self.data).sum(axis=1)), axis=0)
@@ -98,17 +99,18 @@ class VectorQuantizationBST:
         return data[is_near_mean1].index, data[~is_near_mean1].index
         
     def __split_cluster(self, cluster_mean, cluster_indices):
-        rn = 1e-6*np.random.rand(self.ncols)
-        
-        mean_1 = cluster_mean + rn
+        mean_1 = cluster_mean + 1e-6*np.random.rand(self.ncols)
         mean_1 = mean_1/(np.sqrt(np.sum(mean_1**2)))
         
-        mean_2 = cluster_mean - rn
+        mean_2 = cluster_mean + 1e-6*np.random.rand(self.ncols)
         mean_2 = mean_2/(np.sqrt(np.sum(mean_2**2)))
         cluster_1, cluster_2 = self.__2mean_clustring(mean_1, mean_2, cluster_indices)
         
         cluster_1_mean = self.data.loc[cluster_1].mean()
+        cluster_1_mean = cluster_1_mean/np.sqrt(np.sum(cluster_1_mean**2))
+        
         cluster_2_mean = self.data.loc[cluster_2].mean()
+        cluster_2_mean = cluster_2_mean/np.sqrt(np.sum(cluster_2_mean**2))
         
         return cluster_1_mean, cluster_1, cluster_2_mean, cluster_2
         
@@ -131,13 +133,15 @@ class VectorQuantizationBST:
             
             # Current_node does not have children. So let it make children if she is fertile using its items.
             if len(current_node.items) > self.max_bin_length:
-                is_saturated = False
                 c1_m, c1, c2_m, c2 = self.__split_cluster(current_node.value, current_node.items)
-                current_node.left_child  = Node(value=c1_m, parent=current_node, items=c1)
-                current_node.right_child = Node(value=c2_m, parent=current_node, items=c2)
-                
-                # Deleting items of current_node as they are not needed anymore.
-                current_node.items = None
+                # if not able to split current node then don't add childrens
+                if len(c1) != 0 and len(c2) != 0:
+                    is_saturated = False
+                    current_node.left_child  = Node(value=c1_m, parent=current_node, items=c1)
+                    current_node.right_child = Node(value=c2_m, parent=current_node, items=c2)
+
+                    # Deleting items of current_node as they are not needed anymore.
+                    current_node.items = None
         
         return is_saturated    
     
@@ -145,6 +149,7 @@ class VectorQuantizationBST:
         while(True):
             if self.run_next():
                 break
+        print("Binary search tree created!")
     
     def get_similar_food(self, nutrition_feature_100g):
         """
