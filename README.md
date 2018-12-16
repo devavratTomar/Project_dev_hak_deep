@@ -20,9 +20,10 @@ products from around the world, with ingredients, allergens, nutrition facts and
 # Description of important files in the repo
 
 1. `MS3_notebook.ipynb`: The notebook which contains the code for Milestone 2 and 3.
-2. `vector_query.py`: The python module which contains the code for Vector Quantisation.
-3. `original_allergens.txt`: The original 3000+ unique allergens present in the dataset.
-4. `english_allergens.txt`: The translated allergens for the original file present in the dataset.
+2. `ADA_Project_Report.pdf`: Contains the final report with results.
+3. `vector_query.py`: The python module which contains the code for Vector Quantisation.
+4. `original_allergens.txt`: The original 3000+ unique allergens present in the dataset.
+5. `english_allergens.txt`: The translated allergens for the original file present in the dataset.
 
 # Research questions answered
 
