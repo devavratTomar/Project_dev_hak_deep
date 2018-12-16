@@ -17,6 +17,13 @@ products from around the world, with ingredients, allergens, nutrition facts and
 2. We are interested in the products where the allergens and categories are present, remaining with  54,896 observations( almost 10% of overall dataset, but enough to make insights).
 3. Text fields have different languages ( i.e product_name, allergens, additives, categories so on ). The text fields are present in more than 15 languages.
 
+# Description of files in the repo
+
+1. `MS3_notebook.ipynb`: The notebook which contains the code for Milestone 2 and 3.
+2. `vector_query.py`: The python module which contains the code for Vector Quantisation.
+3. `original_allergens.txt`: The original 3000+ unique allergens present in the dataset.
+4. `english_allergens.txt`: The translated allergens for the original file present in the dataset.
+
 # Research questions answered
 
 Food Allergy questions answered:
