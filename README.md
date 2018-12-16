@@ -17,7 +17,7 @@ products from around the world, with ingredients, allergens, nutrition facts and
 2. We are interested in the products where the allergens and categories are present, remaining with  54,896 observations( almost 10% of overall dataset, but enough to make insights).
 3. Text fields have different languages ( i.e product_name, allergens, additives, categories so on ). The text fields are present in more than 15 languages.
 
-# Description of files in the repo
+# Description of important files in the repo
 
 1. `MS3_notebook.ipynb`: The notebook which contains the code for Milestone 2 and 3.
 2. `vector_query.py`: The python module which contains the code for Vector Quantisation.
@@ -42,5 +42,7 @@ After working on the dataset analysis and data cleaning parts in Milestone 2; fo
 - Harshdeep: Word2Vec Feature Engineering and data cleaning for allergens, construction of model using Random Forest for categories and allergens
 - Devavrat Tomar: Vector Quantisation and data clearning of nutrients, tabulating final results of the Random forest model
 - Mariam Hakobyan: Analysis on allergens/additives present in food products, Data cleaning for categories
+
+The report was written by everyone for each part they did as mentioned above.
 
 For the final presentation, 2 of the group members (Mariam and Devavrat) will work on making of the poster while the other group member (Harshdeep) will present the poster and the project.
